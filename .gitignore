@@ -9,3 +9,5 @@ parts
 *.egg-info
 lib
 lib64
+.vscode
+__pycache__
