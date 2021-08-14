@@ -12,13 +12,13 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'mypackage'
-DESCRIPTION = 'My short description for my project.'
-URL = 'https://github.com/me/myproject'
-EMAIL = 'me@example.com'
-AUTHOR = 'Awesome Soul'
+NAME = 'conflictwatch'
+DESCRIPTION = 'Check all remote branches against your current HEAD and staging'
+URL = 'https://github.com/alisternorris/conflictwatch'
+EMAIL = 'hi@alisternorris.com'
+AUTHOR = 'Alister Norris'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = None
+VERSION = '0.0.1'
 LICENSE = 'MIT'
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -86,7 +86,7 @@ setup(
     py_modules=['mypackage'],
 
     entry_points={
-        'console_scripts': ['app=cli:main'],
+        'console_scripts': ['conflictwatch=cli:main'],
     },
     install_requires=REQUIRED,
     include_package_data=True,
